@@ -8,6 +8,6 @@ void	ft_cbufwrite(t_cbus *cbuf, char *s, size_t l)
 	{
 		if (cbuf->wpos - cbuf->rpos == 1)
 			cbuf->rpos++;
-		cbuf->buf[cbuf->wpos++ % cbuf->size] = s++;
+		cbuf->buf[cbuf->wpos++ % cbuf->size] = *s++;
 	}
 }
