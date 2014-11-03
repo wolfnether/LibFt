@@ -5,6 +5,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2 -Wall -Wextra -Werror")
 
 file(GLOB SOURCE_FILES
+cbuf/ft_cbuscreate.c
+cbuf/ft_cbuswrite.c
 list/ft_lstcreate.c
 list/ft_lstpop.c
 list/ft_lstpopat.c
@@ -54,9 +56,11 @@ str/ft_strnew.c
 str/ft_strnstr.c
 str/ft_strrchr.c
 str/ft_strstr.c
+str/ft_tolower.c
+str/ft_toupper.c
 str/get_hex.c
 stream/ft_putstr_fd.c
-cbuf/ft_cbuscreate.c
+
 )
 
 add_library(ft STATIC ${SOURCE_FILES})
