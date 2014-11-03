@@ -56,6 +56,7 @@ str/ft_strrchr.c
 str/ft_strstr.c
 str/get_hex.c
 stream/ft_putstr_fd.c
+cbuf/ft_cbuscreate.c
 )
 
 add_library(ft STATIC ${SOURCE_FILES})
