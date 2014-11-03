@@ -1,7 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2014/11/03 01:57:50 by jdesvall          #+#    #+#             */
+/*   Updated: 2014/11/03 02:06:30 by jdesvall         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/libft.h"
 
-void *ft_memset(void *s, int c, size_t n) {
+void *ft_memset(void *s, int c, size_t n)
+{
 	while (n--)
-		((char *) s)[n] = c;
+		((char *)s)[n] = c;
 	return (s);
 }

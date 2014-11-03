@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstcreate.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2014/11/03 01:58:20 by jdesvall          #+#    #+#             */
+/*   Updated: 2014/11/03 01:58:20 by jdesvall         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/libft.h"
 
-t_list *ft_list_create()
+t_list *ft_list_create(void)
 {
 	return (ft_memalloc(sizeof(t_list)));
 }

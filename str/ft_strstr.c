@@ -1,6 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2014/11/03 02:01:27 by jdesvall          #+#    #+#             */
+/*   Updated: 2014/11/03 02:06:25 by jdesvall         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/libft.h"
 
-char *ft_strstr(const char *haystack, const char *needle){
+char *ft_strstr(const char *haystack, const char *needle)
+{
 	int i;
 	int j;
 
