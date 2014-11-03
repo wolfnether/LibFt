@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstcreate.c                                     :+:      :+:    :+:   */
+/*   ft_memdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 01:58:20 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 01:58:20 by jdesvall         ###   ########.fr       */
+/*   Created: 2014/11/03 02:25:17 by jdesvall          #+#    #+#             */
+/*   Updated: 2014/11/03 02:25:18 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-t_list *ft_lstcreate(void)
+void	*ft_memdup(void *s, size_t size)
 {
-	return (ft_memalloc(sizeof(t_list)));
+	return (ft_memcpy(ft_memalloc(size), s, size));
 }

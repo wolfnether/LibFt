@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstcreate.c                                     :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 01:58:20 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 01:58:20 by jdesvall         ###   ########.fr       */
+/*   Created: 2014/11/03 02:32:11 by jdesvall          #+#    #+#             */
+/*   Updated: 2014/11/03 02:32:12 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-t_list *ft_lstcreate(void)
+size_t	ft_putstr_fd(char *string, int fd)
 {
-	return (ft_memalloc(sizeof(t_list)));
+	return (write(fd, string, ft_strlen(string)));
 }

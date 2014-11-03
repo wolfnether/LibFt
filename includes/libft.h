@@ -16,10 +16,13 @@
 
 # include <string.h>
 # include <stdlib.h>
+# include <unistd.h>
 # include "ftstruct.h"
 
 # define NOTOND(x)    (int)(x * 8 * 0.301) + 3
 # define NOTONX(x)    (x / 2)
+
+size_t	ft_putstr_fd(char *string, int fd);
 
 void	*ft_memdup(void *s, size_t size);
 
@@ -109,7 +112,7 @@ int		ft_isblank(int c);
 
 char	get_hex(int i);
 
-t_list	*ft_list_create();
+t_list	*ft_lstcreate(void);
 
 t_item	*ft_lstpop(t_list *list);
 
