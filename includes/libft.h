@@ -8,6 +8,7 @@
 # define NOTOND(x)    (int)(x * 8 * 0.301) + 3
 # define NOTONX(x)    (x / 2)
 
+char *ft_strnew(size_t size);
 
 void *ft_memset(void *s, int c, size_t n);
 
@@ -33,7 +34,7 @@ char *ft_strncpy(char *dest, const char *src, int n);
 
 char *ft_strcat(char *dest, const char *src);
 
-char *ft_strncat(char *dest, const char *src);
+char *ft_strncat(char *dest, const char *src, int n);
 
 size_t ft_strlcat(char *dst, const char *src, size_t size);
 
