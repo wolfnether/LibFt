@@ -4,9 +4,14 @@
 
 # include <string.h>
 # include <stdlib.h>
+# include "ftstruct.h"
 
 # define NOTOND(x)    (int)(x * 8 * 0.301) + 3
 # define NOTONX(x)    (x / 2)
+
+void *ft_memdup(void *s, size_t size);
+
+void *ft_memalloc(size_t size);
 
 char *ft_strnew(size_t size);
 
@@ -91,5 +96,17 @@ int ft_isascii(int c);
 int ft_isblank(int c);
 
 char get_hex(int i);
+
+t_list *ft_list_create();
+
+t_item	*ft_lstpop(t_list *list);
+
+t_item	*ft_lstpopat(t_list *list, size_t i);
+
+t_item	*ft_lstpop(t_list *list);
+
+void	ft_lstpush(t_list *list, t_item *item, size_t size);
+
+void	ft_lstpushback(t_list *list, t_item *item, size_t size);
 
 #endif
