@@ -63,4 +63,10 @@ stream/ft_putstr_fd.c
 
 )
 
+file(GLOB TEST_FILES
+test/test_mem.c
+)
+
 add_library(ft STATIC ${SOURCE_FILES})
+add_executable(testlib ${TEST_FILES})
+target_link_libraries(testlib ft)
