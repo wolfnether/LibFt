@@ -1,5 +1,8 @@
 #include <stdio.h>
+#include <limits.h>
 #include "../includes/libft.h"
+
+int test_str();
 
 int main()
 {
@@ -52,5 +55,26 @@ int main()
 	ft_bzero(test, 10);
 	if(ft_memcmp(test, test2, 10))
 		return (10);
+	free(test);
+	free(test2);
+	printf("test mem OK!\n");
+	return (test_str());
+}
+
+int test_str() {
+	char *test;
+	if(ft_atoi("10") != 10)
+		return (1);
+	if(ft_atoi("-10") != -10)
+		return (2);
+	test = ft_ltoa(INT_MIN);
+	if(ft_atoi(test) != INT_MIN)
+		return (3);
+	free(test);
+	test = ft_ltoa(INT_MAX);
+	if(ft_atoi(test) != INT_MAX)
+		return (4);
+	free(test);
+	printf("test str OK!\n");
 	return (0);
 }
