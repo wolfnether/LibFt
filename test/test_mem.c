@@ -35,5 +35,8 @@ int main()
 	if(test2 != 0)
 		return (6);
 
+	//memcmp
+	if (ft_memcmp(test, test + 2, 5) == memcmp(test, test + 2, 5))
+		return (7);
 	return (0);
 }
