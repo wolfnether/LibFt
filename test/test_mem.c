@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "../includes/libft.h"
 
 int main()
@@ -38,5 +39,18 @@ int main()
 	//memcmp
 	if (ft_memcmp(test, test + 2, 5) == memcmp(test, test + 2, 5))
 		return (7);
+
+	//memdup
+	test2 = ft_memdup(test, 10);
+	if(ft_memcmp(test, test2, 10))
+		return (8);
+	free(test2);
+	ft_memmove(test + 2, test, 5);
+	if(ft_memcmp(test, "4545673000", 10))
+		return (9);
+	test2 = ft_memalloc(10);
+	ft_bzero(test, 10);
+	if(ft_memcmp(test, test2, 10))
+		return (10);
 	return (0);
 }
