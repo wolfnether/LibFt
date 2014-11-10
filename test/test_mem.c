@@ -75,6 +75,13 @@ int test_str() {
 	if(ft_atoi(test) != INT_MAX)
 		return (4);
 	free(test);
+	test = ft_ltoa(10);
+	if(ft_strcmp(test, "10"))
+		return (5);
+	free(test);
+	test = ft_ltoa(-10);
+	if (ft_strcmp(test, "-10"))
+		return (6);
 	printf("test str OK!\n");
 	return (0);
 }
