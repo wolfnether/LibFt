@@ -14,7 +14,7 @@
 
 char *ft_itoa(int a)
 {
-	char s[(int)NOTOND(sizeof(int)) + 2];
+	char s[NOTOND(sizeof(int)) + 2];
 	char *buf;
 
 	buf = s + NOTOND(sizeof(int)) + 1;
@@ -22,7 +22,7 @@ char *ft_itoa(int a)
 	{
 		while (a)
 		{
-			*--buf = '0' + (a % 10);
+			*--buf = (char)('0' + (a % 10));
 			a /= 10;
 		}
 	}
@@ -32,9 +32,10 @@ char *ft_itoa(int a)
 	{
 		while (a)
 		{
-			*--buf = '0' - (a % 10);
+			*--buf = (char)('0' - (a % 10));
 			a /= 10;
 		}
+		*--buf = '-';
 	}
 	return (ft_strdup(buf));
 }

@@ -14,7 +14,7 @@
 
 char *ft_ltoa(long a)
 {
-	char s[(int)NOTOND(sizeof(long)) + 2];
+	char s[NOTOND(sizeof(long)) + 2];
 	char *buf;
 
 	buf = s + NOTOND(sizeof(long)) + 1;
@@ -22,7 +22,7 @@ char *ft_ltoa(long a)
 	{
 		while (a)
 		{
-			*--buf = '0' + (a % 10);
+			*--buf = (char)('0' + (a % 10));
 			a /= 10;
 		}
 	}
@@ -32,9 +32,10 @@ char *ft_ltoa(long a)
 	{
 		while (a)
 		{
-			*--buf = '0' - (a % 10);
+			*--buf = (char)('0' - (a % 10));
 			a /= 10;
 		}
+		*--buf = '-';
 	}
 	return (ft_strdup(buf));
 }
