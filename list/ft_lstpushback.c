@@ -22,7 +22,8 @@ void	ft_lstpushback(t_list *list, t_item *item, size_t size)
 	if (!new)
 		return ;
 	list->tail = new;
-	tail->next = new;
+	if (tail)
+		tail->next = new;
 	new->prev = tail;
 	new->next = 0;
 	list->size++;

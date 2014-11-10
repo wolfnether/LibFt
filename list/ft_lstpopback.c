@@ -20,6 +20,7 @@ t_item	*ft_lstpop(t_list *list)
 	list->tail = tail->prev;
 	tail->prev = 0;
 	list->size--;
+	if (list->tail)
 	list->tail->next = 0;
 	return (tail);
 }

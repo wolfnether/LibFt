@@ -4,6 +4,8 @@
 
 int test_str();
 
+int test_list();
+
 int main()
 {
 	char *test;
@@ -89,7 +91,38 @@ int test_str() {
 	free(test);
 	test = ft_itoh(-10);
 	if(ft_strcmp(test, "FFFFFFF6"))
-		return (7);
+		return (8);
+	free(test);
+	test = ft_strdup("test test test oh yeah funny test");
+	if(ft_strstr(test, "oh") != strstr(test, "oh"))
+		return (9);
 	printf("test str OK!\n");
+	return (test_list());
+}
+
+typedef struct s_testitem
+{
+	t_item header;
+	int i;
+} t_testitem;
+
+int test_list() {
+	t_list *test;
+	t_testitem testitem;
+	t_testitem *testitem1;
+	int i = 0;
+
+	test = ft_lstcreate();
+
+	for(i = 0; i < 50; i++) {
+		testitem.i = i;
+		ft_lstpush(test, (t_item *) &testitem, sizeof(testitem));
+	}
+	for(i = 0; i < 50; i++) {
+		testitem1 = (t_testitem *)ft_lstpop(test);
+		if (testitem1->i != 50 - i - 1)
+			return (1);
+	}
+	printf("test list OK!\n");
 	return (0);
 }
