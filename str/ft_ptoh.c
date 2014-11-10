@@ -14,9 +14,11 @@
 
 char *ft_ptoh(void *p)
 {
-	if (sizeof(p) == sizeof(int))
+	#if __WORDSIZE == 32
+		return (ft_itoh((unsigned int)p));
+	#elif __WORDSIZE == 64
 		return (ft_ltoh((unsigned long)p));
-	else if (sizeof(p) == sizeof(long))
-		return (ft_ltoh((unsigned long)p));
-	return (ft_strdup("0"));
+	#else
+		return (ft_strdup("0"));
+	#endif
 }

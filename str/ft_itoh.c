@@ -14,9 +14,10 @@
 
 char *ft_itoh(unsigned a)
 {
-	char s[(int)NOTONX(sizeof(int)) + 2];
+	char s[NOTONX(sizeof(int)) + 2];
 	char *buf;
 
+	ft_bzero(s, NOTONX(sizeof(int)) + 2);
 	buf = s + NOTONX(sizeof(int)) + 1;
 	if (a > 0)
 	{

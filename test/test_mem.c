@@ -82,6 +82,14 @@ int test_str() {
 	test = ft_ltoa(-10);
 	if (ft_strcmp(test, "-10"))
 		return (6);
+	free(test);
+	test = ft_itoh(10);
+	if(ft_strcmp(test, "A"))
+		return (7);
+	free(test);
+	test = ft_itoh(-10);
+	if(ft_strcmp(test, "FFFFFFF6"))
+		return (7);
 	printf("test str OK!\n");
 	return (0);
 }

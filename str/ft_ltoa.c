@@ -17,6 +17,7 @@ char *ft_ltoa(long a)
 	char s[NOTOND(sizeof(long)) + 2];
 	char *buf;
 
+	ft_bzero(s, NOTOND(sizeof(long)) + 2);
 	buf = s + NOTOND(sizeof(long)) + 1;
 	if (a > 0)
 	{

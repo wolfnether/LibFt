@@ -19,8 +19,8 @@
 # include <unistd.h>
 # include "ftstruct.h"
 
-# define NOTOND(x)    (int)(x * 8 * 0.301) + 3
-# define NOTONX(x)    (x / 2)
+# define NOTOND(x)    NOTONX(x) * 2
+# define NOTONX(x)    (x * 2)
 
 size_t	ft_putstr_fd(char *string, int fd);
 

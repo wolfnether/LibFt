@@ -14,9 +14,10 @@
 
 char *ft_ltoh(long unsigned a)
 {
-	char s[(int)NOTONX(sizeof(long)) + 2];
+	char s[NOTONX(sizeof(long)) + 2];
 	char *buf;
 
+	ft_bzero(s, NOTONX(sizeof(long)) + 2);
 	buf = s + NOTONX(sizeof(long)) + 1;
 	if (a > 0)
 	{

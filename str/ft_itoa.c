@@ -17,6 +17,7 @@ char *ft_itoa(int a)
 	char s[NOTOND(sizeof(int)) + 2];
 	char *buf;
 
+	ft_bzero(s, NOTOND(sizeof(int)) + 2);
 	buf = s + NOTOND(sizeof(int)) + 1;
 	if (a > 0)
 	{
