@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 01:53:56 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/05 17:22:27 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/05 19:37:38 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,4 +129,3 @@ void	ft_lstpush(t_list *list, t_item *item, size_t size);
 void	ft_lstpushback(t_list *list, t_item *item, size_t size);
 
 #endif
-

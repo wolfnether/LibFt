@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 01:51:54 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 01:53:42 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/05 19:37:31 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,4 @@ typedef struct		s_list
 	size_t			size;
 }					t_list;
 
-
-
 #endif
-
