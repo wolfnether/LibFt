@@ -16,3 +16,4 @@ t_list *ft_lstcreate(void)
 {
 	return (ft_memalloc(sizeof(t_list)));
 }
+

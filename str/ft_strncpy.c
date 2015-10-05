@@ -27,3 +27,4 @@ char *ft_strncpy(char *dest, const char *src, int n)
 			dest[i++] = 0;
 	return (dest);
 }
+

@@ -29,3 +29,4 @@ void	ft_lstpushback(t_list *list, t_item *item, size_t size)
 	list->size++;
 	item->master = list;
 }
+

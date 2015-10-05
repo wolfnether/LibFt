@@ -19,3 +19,4 @@ char *ft_strdup(const char *s)
 	n = ft_strnew(ft_strlen(s));
 	return (ft_strcpy(n, s));
 }
+

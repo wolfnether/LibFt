@@ -22,3 +22,4 @@ char *ft_ptoh(void *p)
 		return (ft_strdup("0"));
 	#endif
 }
+

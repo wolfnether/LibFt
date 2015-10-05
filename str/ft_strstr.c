@@ -38,3 +38,4 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	else 
 		return (0);
 }
+

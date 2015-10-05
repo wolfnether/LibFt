@@ -39,3 +39,4 @@ char *ft_ltoh(long unsigned a)
 	}
 	return (ft_strdup(buf));
 }
+

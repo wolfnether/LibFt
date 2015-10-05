@@ -16,3 +16,4 @@ int ft_isgraph(int c)
 {
 	return (33 <= c && c <= 126);
 }
+

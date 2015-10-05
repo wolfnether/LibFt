@@ -19,3 +19,4 @@ char get_hex(int i)
 	else
 		return ('A' + i - 10);
 }
+

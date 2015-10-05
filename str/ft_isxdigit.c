@@ -18,3 +18,4 @@ int ft_isxdigit(int c)
 	('a' <= c && c <= 'f') ||
 	('A' <= c && c <= 'F'));
 }
+

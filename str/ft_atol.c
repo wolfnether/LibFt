@@ -30,3 +30,4 @@ long ft_atol(const char *nptr)
 	}
 	return (i * neg);
 }
+

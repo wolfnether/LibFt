@@ -6,3 +6,4 @@ int	ft_tolower(int c)
 		return (c - ('A' - 'a'));
 	return (c);
 }
+

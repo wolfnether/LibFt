@@ -30,3 +30,4 @@ int ft_atoi(const char *nptr)
 	}
 	return (i * neg);
 }
+

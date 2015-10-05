@@ -24,3 +24,4 @@ t_item	*ft_lstpop(t_list *list)
 		list->head->prev = 0;
 	return (head);
 }
+

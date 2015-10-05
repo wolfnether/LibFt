@@ -40,3 +40,4 @@ char *ft_itoa(int a)
 	}
 	return (ft_strdup(buf));
 }
+

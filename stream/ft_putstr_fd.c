@@ -16,3 +16,4 @@ size_t	ft_putstr_fd(char *string, int fd)
 {
 	return (write(fd, string, ft_strlen(string)));
 }
+

@@ -32,3 +32,4 @@ t_item	*ft_lstpopat(t_list *list, size_t i)
 	item->next = 0;
 	return (item);
 }
+

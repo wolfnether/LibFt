@@ -16,3 +16,4 @@ void	*ft_memdup(void *s, size_t size)
 {
 	return (ft_memcpy(ft_memalloc(size), s, size));
 }
+

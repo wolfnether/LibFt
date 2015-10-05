@@ -28,3 +28,4 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
 	*dst = 0;
 	return (sizet[0] + sizet[1]);
 }
+
