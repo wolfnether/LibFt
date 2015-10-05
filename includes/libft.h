@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 01:53:56 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 01:56:04 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/05 17:22:27 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,6 +109,10 @@ int		ft_isxdigit(int c);
 int		ft_isascii(int c);
 
 int		ft_isblank(int c);
+
+int		ft_tolower(int c);
+
+int		ft_toupper(int c);
 
 char	get_hex(int i);
 
