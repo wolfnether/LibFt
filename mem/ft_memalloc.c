@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 02:25:58 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/06 13:59:46 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:35:55 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,7 @@ void	*ft_memalloc(size_t size)
 
 	new = malloc(size);
 	if (!new)
-	{
-		ft_putstr_fd("Out of memory", 2);
-		exit(0);
-	}
+		return (new);
 	ft_bzero(new, size);
 	return (new);
 }

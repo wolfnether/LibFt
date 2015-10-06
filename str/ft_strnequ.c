@@ -1,18 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 02:32:11 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/06 15:24:16 by jdesvall         ###   ########.fr       */
+/*   Created: 2015/10/06 14:31:54 by jdesvall          #+#    #+#             */
+/*   Updated: 2015/10/06 15:10:02 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include <libft.h>
 
-void	ft_putstr_fd(char const *string, int fd)
-{
-	write(fd, string, ft_strlen(string));
+int	ft_strnequ(char const *s1, char const *s2, size_t i){
+	return !ft_strncmp(s1, s2, i);
 }
