@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striter.c                                       :+:      :+:    :+:   */
+/*   list.struct.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/06 14:24:01 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/06 16:24:50 by jdesvall         ###   ########.fr       */
+/*   Created: 2015/10/06 16:18:53 by jdesvall          #+#    #+#             */
+/*   Updated: 2015/10/06 16:20:43 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#ifndef LIST_STRUCT_H
 
-void	ft_striter(char *s, void (*f)(char *))
+# define LIST_STRUCT_H
+
+typedef struct		s_list
 {
-	while (*s)
-		f(s++);
-}
+	struct s_item	*head;
+	struct s_item	*tail;
+	size_t			size;
+}					t_list;
+
+#endif

@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/06 14:27:22 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/06 14:31:29 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 16:25:11 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		*(ns + i) = f(i, *(s + i));
 		i++;
 	}
-	return ns;
+	return (ns);
 }

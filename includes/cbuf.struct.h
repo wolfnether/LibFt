@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striter.c                                       :+:      :+:    :+:   */
+/*   cbuf.struct.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/06 14:24:01 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/06 16:24:50 by jdesvall         ###   ########.fr       */
+/*   Created: 2015/10/06 16:13:10 by jdesvall          #+#    #+#             */
+/*   Updated: 2015/10/06 16:16:03 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#ifndef CBUF_STRUCT_H
 
-void	ft_striter(char *s, void (*f)(char *))
+# define CBUF_STRUCT_H
+
+typedef struct	s_cbuf
 {
-	while (*s)
-		f(s++);
-}
+	char		*buf;
+	size_t		size;
+	size_t		rpos;
+	size_t		wpos;
+}				t_cbus;
+
+#endif

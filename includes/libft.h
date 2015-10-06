@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 01:53:56 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/06 15:24:33 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 16:22:08 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,14 +75,14 @@ t_item	*ft_lstpopat(t_list *list, size_t i);
 t_item	*ft_lstpop(t_list *list);
 void	ft_lstpush(t_list *list, t_item *item, size_t size);
 void	ft_lstpushback(t_list *list, t_item *item, size_t size);
-void    ft_memdel(void **ap);
-char    *ft_strsub(char const *s, unsigned int st, size_t len);
-char    *ft_strtrim(char const *s);
-char    **ft_strsplit(char const *s, char c);
+void	ft_memdel(void **ap);
+char	*ft_strsub(char const *s, unsigned int st, size_t len);
+char	*ft_strtrim(char const *s);
+char	**ft_strsplit(char const *s, char c);
 int		ft_strnequ(char const *s1, char const *s2, size_t i);
 int		ft_strequ(char const *s1, char const *s2);
 void	ft_striter(char *s, void (*f)(char *));
-void	 ft_striteri(char *s, void (*f)(unsigned int,char *));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strjoin(char const *s1, char const *s2);

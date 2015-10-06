@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/06 14:46:53 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/06 15:06:51 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 16:26:31 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,13 @@ static void	ft_splitter(char **as, char const *s, char c)
 	while (*s)
 	{
 		n = 0;
-		if (*s == c)
-		{
-			s++;
-			while (*(s + n) != c && *(s + n) != 0)
-				n++;
-		}
+		while (*(s + n) != c && *(s + n) != 0)
+			n++;
 		if (n)
 		{
 			*tas++ = ft_strsub(s, 0, n);
+			if (!*(s + n))
+				return ;
 			s += n;
 		}
 		s++;
@@ -43,7 +41,7 @@ char		**ft_strsplit(char const *s, char c)
 	char	*ts;
 	char	**as;
 	int		n;
-	
+
 	n = *s == c ? 0 : 1;
 	ts = (char *)s;
 	while (*ts)

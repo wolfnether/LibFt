@@ -6,12 +6,13 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/06 14:31:54 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/06 15:03:47 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 16:28:30 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-int	ft_strequ(char const *s1, char const *s2){
-	return !ft_strcmp(s1, s2);
+int	ft_strequ(char const *s1, char const *s2)
+{
+	return (!ft_strcmp(s1, s2));
 }
