@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 01:58:38 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 01:58:39 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 13:57:13 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,3 @@ t_item	*ft_lstpop(t_list *list)
 		list->head->prev = 0;
 	return (head);
 }
-

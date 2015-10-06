@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 01:58:33 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 01:58:33 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 13:58:44 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ void	ft_lstpushback(t_list *list, t_item *item, size_t size)
 	list->size++;
 	item->master = list;
 }
-

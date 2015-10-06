@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 01:58:46 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 01:58:47 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 13:57:26 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,3 @@ t_item	*ft_lstpopat(t_list *list, size_t i)
 	item->next = 0;
 	return (item);
 }
-
