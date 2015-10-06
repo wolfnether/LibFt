@@ -6,13 +6,13 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 02:09:32 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 02:09:54 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:07:28 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char *ft_ltoa(long a)
+char	*ft_ltoa(long a)
 {
 	char s[NOTOND(sizeof(long)) + 2];
 	char *buf;
@@ -40,4 +40,3 @@ char *ft_ltoa(long a)
 	}
 	return (ft_strdup(buf));
 }
-

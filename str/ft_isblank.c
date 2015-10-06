@@ -6,14 +6,13 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 02:00:30 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 02:06:29 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:05:11 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int ft_isblank(int c)
+int	ft_isblank(int c)
 {
 	return (c == ' ' || c == '\t');
 }
-

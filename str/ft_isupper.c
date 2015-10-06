@@ -6,14 +6,13 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 01:59:58 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 02:06:28 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:06:28 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int ft_isupper(int c)
+int	ft_isupper(int c)
 {
 	return ('A' <= c && c <= 'Z');
 }
-

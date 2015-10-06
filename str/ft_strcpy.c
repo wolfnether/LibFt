@@ -6,13 +6,13 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 02:02:02 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 02:06:26 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:10:27 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char *ft_strcpy(char *dest, const char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
 	int i;
 
@@ -25,4 +25,3 @@ char *ft_strcpy(char *dest, const char *src)
 	dest[i] = 0;
 	return (dest);
 }
-

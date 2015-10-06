@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 02:01:27 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/05 17:28:00 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:16:30 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	}
 	if (*haystack == *needle && *needle == 0)
 		return ((char *)haystack);
-	else 
+	else
 		return (0);
 }
-

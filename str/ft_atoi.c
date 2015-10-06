@@ -6,13 +6,13 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 01:59:12 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/05 18:44:43 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:03:51 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
 	int i;
 	int neg;
@@ -30,4 +30,3 @@ int ft_atoi(const char *nptr)
 	}
 	return (i * neg);
 }
-

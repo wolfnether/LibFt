@@ -6,13 +6,13 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 01:59:17 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 02:06:30 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:04:07 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-long ft_atol(const char *nptr)
+long	ft_atol(const char *nptr)
 {
 	long	i;
 	int		neg;
@@ -30,4 +30,3 @@ long ft_atol(const char *nptr)
 	}
 	return (i * neg);
 }
-

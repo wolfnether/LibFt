@@ -6,17 +6,16 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 02:02:50 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 02:06:24 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:14:14 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char get_hex(int i)
+char	get_hex(int i)
 {
 	if (i < 10)
 		return ('0' + i);
 	else
 		return ('A' + i - 10);
 }
-

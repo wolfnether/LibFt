@@ -6,13 +6,13 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 02:01:30 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/05 17:38:26 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:13:22 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	size_t i;
 
@@ -24,4 +24,3 @@ char *ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-

@@ -6,13 +6,13 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 02:08:43 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 02:09:15 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:07:39 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char *ft_ltoh(long unsigned a)
+char	*ft_ltoh(long unsigned a)
 {
 	char s[NOTONX(sizeof(long)) + 2];
 	char *buf;
@@ -39,4 +39,3 @@ char *ft_ltoh(long unsigned a)
 	}
 	return (ft_strdup(buf));
 }
-

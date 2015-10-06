@@ -6,15 +6,14 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 02:00:03 by jdesvall          #+#    #+#             */
-/*   Updated: 2015/10/05 18:44:25 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:14:35 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int ft_isspace(int c)
+int	ft_isspace(int c)
 {
 	return (c == ' ' || c == '\f' || c == '\n'
 	|| c == '\r' || c == '\t' || c == '\v');
 }
-

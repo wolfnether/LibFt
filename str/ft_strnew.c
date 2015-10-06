@@ -6,14 +6,13 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 02:01:37 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 02:02:23 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:12:50 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char *ft_strnew(size_t size)
+char	*ft_strnew(size_t size)
 {
 	return (ft_memalloc(size + 1));
 }
-

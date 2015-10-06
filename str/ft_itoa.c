@@ -6,13 +6,13 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 01:59:33 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 02:10:13 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:06:59 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char *ft_itoa(int a)
+char	*ft_itoa(int a)
 {
 	char s[NOTOND(sizeof(int)) + 2];
 	char *buf;
@@ -40,4 +40,3 @@ char *ft_itoa(int a)
 	}
 	return (ft_strdup(buf));
 }
-
