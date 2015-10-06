@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 02:25:17 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 02:25:18 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 14:01:46 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,3 @@ void	*ft_memdup(void *s, size_t size)
 {
 	return (ft_memcpy(ft_memalloc(size), s, size));
 }
-

@@ -6,7 +6,7 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 02:25:58 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 02:26:06 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 13:59:46 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,3 @@ void	*ft_memalloc(size_t size)
 	ft_bzero(new, size);
 	return (new);
 }
-

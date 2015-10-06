@@ -3,11 +3,13 @@ SRC= cbuf/ft_cbuscreate.c cbuf/ft_cbuswrite.c list/ft_lstcreate.c list/ft_lstpop
 OBJ=$(addsuffix .o, $(SRC)) 
 H= includes/ftstruct.h includes/libft.h 
 HPP=  
+CFLAGS=-Werror -Wextra -Wall -O3 
+LDFLAGS=
 all:   $(NAME) 
 $(NAME):$(OBJ) $(H) $(HPP) 
 	 ar rcs $(NAME) $(OBJ) 
 %.c.o:%.c $(H) 
-	 gcc -O3 -Wall -Wextra -c $< -o $@ 
+	 gcc $(CFLAGS) -c $< -o $@ 
 %.s.o:%.s 
 	 nasm -f macho64 $< -o $@ 
 %.cpp.o:%.cpp $(HPP) 

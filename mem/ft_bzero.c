@@ -6,15 +6,14 @@
 /*   By: jdesvall <jdesvall@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 01:56:32 by jdesvall          #+#    #+#             */
-/*   Updated: 2014/11/03 02:06:31 by jdesvall         ###   ########.fr       */
+/*   Updated: 2015/10/06 13:59:38 by jdesvall         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	while (n--)
 		((char *)s)[n] = 0;
 }
-
