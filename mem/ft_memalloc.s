@@ -1,31 +1,24 @@
 [bits 64]
 
 	global _ft_memalloc
-	extern _malloc, _bzero
+	extern malloc_wrapper, _ft_bzero
 
 _ft_memalloc:
 	push r12
-	push rbp
-	mov rbp, rsp
-	and rsp, -0xf				;16 bits stack align
 
 	mov r12, rdi
 
-	call _malloc
+	call malloc_wrapper
 
 	test rax, rax
-	jz fin
+	jz f
 
 	mov rsi, r12
 	mov r12, rax
 	
 	mov rdi, rax
-	call _bzero
+	call _ft_bzero
 
 	mov rax, r12
-
-fin:
-	mov rsp, rbp
-	pop rbp
-	pop r12
+f:	pop r12
 	ret
